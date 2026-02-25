@@ -1,0 +1,60 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!-- HERO -->
+<div class="container text-center mt-5">
+    <img src="{% static 'images/logo.png' %}" width="220" class="mb-4">
+    <h1 class="hero-title">RONDONÓPOLIS HAWKS</h1>
+    <p class="lead">Força • Garra • Tradição</p>
+</div>
+
+<!-- SOBRE -->
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-8 mx-auto text-center">
+            <h2 class="section-title">Sobre o Time</h2>
+            <p class="mt-3">
+                O Rondonópolis Hawks nasceu com a missão de desenvolver o futebol americano
+                na região, formando atletas de alto nível e representando a cidade com
+                competitividade, disciplina e união.
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- TITULOS -->
+<div class="container mt-5 mb-5">
+    <h2 class="section-title text-center mb-4">Títulos Conquistados</h2>
+
+    <div class="row text-center">
+
+        <div class="col-md-4">
+            <div class="card card-custom p-4">
+                <h3>🏆</h3>
+                <h5>Campeão Estadual</h5>
+                <p>2023</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card card-custom p-4">
+                <h3>🥇</h3>
+                <h5>Vice-Campeão Regional</h5>
+                <p>2022</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card card-custom p-4">
+                <h3>🏅</h3>
+                <h5>Melhor Defesa</h5>
+                <p>2021</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}
