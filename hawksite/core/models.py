@@ -1,3 +1,10 @@
 from django.db import models
 
-# Create your models here.
+class Player(models.Model):
+    nome = models.CharField(max_length=100)
+    numero = models.IntegerField()
+    posicao = models.CharField(max_length=50)
+    foto = models.ImageField(upload_to='players/')
+
+    def __str__(self):
+        return f"{self.numero} - {self.nome}"
