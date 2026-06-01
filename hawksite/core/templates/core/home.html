@@ -4,24 +4,42 @@
 {% block content %}
 
 <!-- HERO -->
-<div class="container text-center mt-5">
-    <img src="{% static 'images/logo.png' %}" width="220" class="mb-4">
-    <h1 class="hero-title">RONDONÓPOLIS HAWKS</h1>
-    <p class="lead">Força • Garra • Tradição</p>
+<section class="hero-section">
+
+```
+<div class="container">
+
+    <img src="{% static 'images/logo.png' %}" class="hero-logo">
+
+    <h1 class="hero-title">
+        RONDONÓPOLIS HAWKS
+    </h1>
+
+    <p class="hero-subtitle">
+        FORÇA • GARRA • TRADIÇÃO
+    </p>
+
+    <a href="#elenco" class="btn btn-hawks mt-3">
+        Conheça o Elenco
+    </a>
+
 </div>
+```
+
+</section>
+
 
 <!-- HISTÓRIA DO TIME -->
-<section class="py-5">
+<section class="py-5 bg-dark-alt">
     <div class="container">
 
         <h2 class="section-title text-center mb-5">
-            História do <span class="highlight">Rondonópolis Hawks</span>
+            Nossa <span class="highlight">História</span>
         </h2>
 
-        <div class="row">
-            <div class="col-md-10 mx-auto">
-
-                <p class="mb-4">
+        <div class="row align-items-center">
+            <div class="col-md-8 mx-auto text-center">
+                <p class="lead mb-4">
                     O clube tem uma trajetória de crescimento constante, com foco em desenvolvimento
                     técnico, parcerias e reconhecimento regional. A equipe se consolidou na Liga
                     Brasileira de Futebol Americano (BFA) e na Superliga D1, participando de
@@ -33,7 +51,6 @@
                     mostrando dominância sobre adversários como Tubarões do Cerrado (Brasília),
                     com vitória por 13 a 7 na prorrogação.
                 </p>
-
             </div>
         </div>
 
@@ -42,133 +59,150 @@
 
 
 <!-- TITULOS E CONQUISTAS -->
-<section class="py-5 text-center">
+<!-- TITULOS E CONQUISTAS -->
+
+<section class="py-5">
     <div class="container">
 
-        <h2 class="section-title mb-5">
-            Títulos e Conquistas
-        </h2>
+```
+    <h2 class="section-title text-center mb-5">
+        Títulos e <span class="highlight">Conquistas</span>
+    </h2>
 
-        <div class="row">
+    <div class="row g-4">
 
-            <div class="col-md-6 mb-4">
-                <div class="card shadow p-4 h-100">
-                    <h5 class="highlight">
+        <div class="col-md-6">
+            <div class="card p-4 h-100 border-0 shadow-sm text-white">
+                <div class="card-body">
+                    <h5 class="highlight mb-3">
                         Campeão Conferência Centro-Oeste – Superliga D1 (2024)
                     </h5>
-                    <p>
+                    <p class="mb-0">
                         Vitória sobre o Cuiabá Arsenal por <strong>26×12</strong>,
                         marcando a primeira conquista de conferência do Hawks.
                     </p>
                 </div>
             </div>
+        </div>
 
-            <div class="col-md-6 mb-4">
-                <div class="card shadow p-4 h-100">
-                    <h5 class="highlight">
+        <div class="col-md-6">
+            <div class="card p-4 h-100 border-0 shadow-sm text-white">
+                <div class="card-body">
+                    <h5 class="highlight mb-3">
                         Bicampeão Conferência Centro-Oeste – Superliga D1 (2025)
                     </h5>
-                    <p>
+                    <p class="mb-0">
                         Vitória sobre o Tubarões do Cerrado por <strong>13×7</strong>,
                         em partida decidida na prorrogação.
                     </p>
                 </div>
             </div>
+        </div>
 
-            <div class="col-md-6 mb-4">
-                <div class="card shadow p-4 h-100">
-                    <h5 class="highlight">
+        <div class="col-md-6">
+            <div class="card p-4 h-100 border-0 shadow-sm text-white">
+                <div class="card-body">
+                    <h5 class="highlight mb-3">
                         Campeão Conferência Central-Norte – Superliga D1 (2025)
                     </h5>
-                    <p>
+                    <p class="mb-0">
                         Vitória dominante sobre o Manaus Cavaliers por
                         <strong>76×00</strong> no Estádio da Colina, garantindo vaga
                         na final nacional.
                     </p>
                 </div>
             </div>
+        </div>
 
-            <div class="col-md-6 mb-4">
-                <div class="card shadow p-4 h-100">
-                    <h5 class="highlight">
+        <div class="col-md-6">
+            <div class="card p-4 h-100 border-0 shadow-sm text-white">
+                <div class="card-body">
+                    <h5 class="highlight mb-3">
                         Série Invicta – Superliga D1 (2025)
                     </h5>
-                    <p>
+                    <p class="mb-0">
                         Sequência de <strong>6 vitórias consecutivas</strong>,
                         com atuação dominante no ataque e na defesa.
                     </p>
                 </div>
             </div>
-
         </div>
 
-        <div class="row mt-4">
-            <div class="col-md-10 mx-auto">
-                <p>
-                    O Rondonópolis Hawks é hoje um dos times mais consistentes do
-                    futebol americano brasileiro, mantendo o foco em excelência
-                    esportiva e na busca pelo título nacional em <strong>2026</strong>.
-                </p>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-md-10 mx-auto text-center">
+            <p class="lead text-white">
+                O Rondonópolis Hawks é hoje um dos times mais consistentes do
+                futebol americano brasileiro, mantendo o foco em excelência
+                esportiva e na busca pelo título nacional em <strong>2026</strong>.
+            </p>
+        </div>
+    </div>
+
+</div>
+```
+
+</section>
+
+
+<!-- PATROCINADORES -->
+<section class="py-5 bg-dark-alt">
+    <div class="container text-center">
+
+        <h2 class="section-title mb-5">Patrocinadores</h2>
+
+        <div class="row justify-content-center align-items-center g-4">
+
+            {% for sponsor in sponsors %}
+
+            <div class="col-lg-2 col-md-3 col-6">
+                {% if sponsor.site %}
+                    <a href="{{ sponsor.site }}" target="_blank">
+                        <img src="{{ sponsor.logo.url }}" class="img-fluid sponsor-img" style="max-height:80px;" alt="{{ sponsor.nome }}">
+                    </a>
+                {% else %}
+                    <img src="{{ sponsor.logo.url }}" class="img-fluid sponsor-img" style="max-height:80px;" alt="{{ sponsor.nome }}">
+                {% endif %}
             </div>
+
+            {% endfor %}
+
         </div>
 
     </div>
 </section>
 
-<!-- PATROCINADORES -->
-<div class="container text-center mt-5 mb-5">
-
-    <h2 class="section-title mb-4">Patrocinadores</h2>
-
-    <div class="row justify-content-center align-items-center">
-
-        {% for sponsor in sponsors %}
-
-        <div class="col-lg-2 col-md-3 col-6 mb-4">
-            {% if sponsor.site %}
-                <a href="{{ sponsor.site }}" target="_blank">
-                    <img src="{{ sponsor.logo.url }}" class="img-fluid" style="max-height:80px;">
-                </a>
-            {% else %}
-                <img src="{{ sponsor.logo.url }}" class="img-fluid" style="max-height:80px;">
-            {% endif %}
-        </div>
-
-        {% endfor %}
-
-    </div>
-
-</div>
 <!-- JOGADORES -->
-<section class="py-5">
+<section id="elenco" class="py-5">
     <div class="container">
 
         <h2 class="section-title text-center mb-5">
-            ELENCO
+            ELENCO <span class="highlight">2026</span>
         </h2>
 
-        <div class="row">
+        <div class="row g-4">
 
             {% for jogador in jogadores %}
 
-            <div class="col-md-3 text-center mb-4">
+            <div class="col-lg-3 col-md-4 col-sm-6">
 
-                <div class="card shadow">
+                <div class="card h-100 border-0 shadow-sm overflow-hidden">
 
-                    <img src="{{ jogador.foto.url }}" class="card-img-top">
+                    <img src="{{ jogador.foto.url }}" class="card-img-top" alt="{{ jogador.nome }}">
 
-                    <div class="card-body">
+                    <div class="card-body text-center">
 
-                        <h5 class="card-title">
+                        <h5 class="card-title mb-1">
                             #{{ jogador.numero }} {{ jogador.nome }}
                         </h5>
 
-                        <p class="text-muted">
+                        <p class="text-accent fw-bold small mb-2" style="color: var(--accent-color)">
                             {{ jogador.posicao }}
                         </p>
 
-                        <p>
-                            {{ jogador.bio }}
+                        <p class="card-text text-muted small">
+                            {{ jogador.bio|truncatechars:100 }}
                         </p>
 
                     </div>
